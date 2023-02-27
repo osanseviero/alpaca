@@ -26,6 +26,14 @@ The module has two utilities for text generation
 * [FlanT5 XXL](https://huggingface.co/spaces/osanseviero/i-like-flan) for high-quality generation
 * [MagicPrompt](https://huggingface.co/spaces/Gustavosta/MagicPrompt-Stable-Diffusion) for prompt generation
 
+```python
+from alpaca_ml import FlanT5
+
+generator = FlanT5()
+generator("Q: Can Barack Obama have a conversation with George Washington? Give the rationale before answering.")
+# 'George Washington died in 1799. Barack Obama was born in 1961. The answer: no.'
+```
+
 ## Automatic Speech Recognition
 
 Given an audio file, the model can transcribe it into text. The module contains two utilities:
@@ -65,3 +73,7 @@ answerer = BlipQuestionAnswerer()
 answerer("bill.png", "Does the person in the picture have glasses?")
 # 'answer: yes'
 ```
+
+## Creative use cases
+
+1. 
